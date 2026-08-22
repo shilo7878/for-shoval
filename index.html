@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>פגישה מס' 001 | שילה ושובל</title>
+<style>
+:root{--bg:#f3f7f5;--card:#fff;--ink:#18312b;--muted:#71817c;--green:#3d7465;--green2:#8db4a8;--line:#dfe9e5;--red:#b85d68}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,"Noto Sans Hebrew",sans-serif;background:radial-gradient(circle at top,#e3efeb 0,#f6f8f7 48%,#edf2f0 100%);color:var(--ink);min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(61,116,101,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(61,116,101,.035) 1px,transparent 1px);background-size:28px 28px}
+.wrap{width:min(720px,92vw);margin:0 auto;padding:28px 0 48px}.top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px;margin-bottom:14px}.badge{border:1px solid var(--line);background:rgba(255,255,255,.75);padding:7px 11px;border-radius:999px}.card{background:rgba(255,255,255,.94);border:1px solid var(--line);border-radius:24px;box-shadow:0 18px 50px rgba(28,65,55,.11);padding:clamp(22px,5vw,42px);position:relative;overflow:hidden}.card:after{content:"PSY-001";position:absolute;left:-12px;top:22px;transform:rotate(-90deg);font-size:10px;letter-spacing:2px;color:#b7c7c2}.brain{font-size:46px;text-align:center}.eyebrow{text-align:center;color:var(--green);font-weight:700;font-size:13px;letter-spacing:.5px}.title{text-align:center;font-size:clamp(32px,8vw,54px);margin:7px 0 24px}.info{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:22px 0}.info div{border:1px solid var(--line);border-radius:14px;padding:13px;background:#f9fbfa}.info span{display:block;color:var(--muted);font-size:12px;margin-bottom:5px}.note{background:#eef5f2;border-right:4px solid var(--green2);padding:15px;border-radius:12px;line-height:1.65;margin:18px 0}.warm{text-align:center;line-height:1.85;font-size:18px;margin:26px auto;max-width:560px}.warm b{color:var(--green)}.warning{text-align:center;border-top:1px solid var(--line);padding-top:20px;margin-top:24px}.btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px}.btn{appearance:none;border:0;border-radius:14px;padding:14px 22px;font-size:16px;font-weight:700;cursor:pointer;transition:.2s;box-shadow:0 7px 18px rgba(28,65,55,.12)}.btn:hover{transform:translateY(-2px)}.primary{background:var(--green);color:#fff}.secondary{background:#edf3f1;color:var(--ink);border:1px solid var(--line)}.screen{display:none;animation:in .45s ease}.screen.active{display:block}@keyframes in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}.progress{height:8px;background:#edf2f0;border-radius:99px;overflow:hidden;margin:12px 0 30px}.bar{height:100%;background:var(--green);width:0;transition:.4s}.qnum{color:var(--green);font-size:13px;font-weight:bold}.question{font-size:24px;line-height:1.5;margin:10px 0 22px}.answer{display:block;width:100%;text-align:right;background:#f9fbfa;border:1px solid var(--line);border-radius:14px;padding:15px 17px;margin:10px 0;font-size:16px;cursor:pointer;color:var(--ink);transition:.18s}.answer:hover{background:#edf5f2;border-color:#b9d0c9;transform:translateX(-3px)}.analysis{text-align:center}.loader{width:64px;height:64px;border-radius:50%;border:6px solid #e3ece9;border-top-color:var(--green);margin:20px auto;animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.checks{text-align:right;display:inline-block;line-height:2;font-size:18px}.resultBox{background:#f3f8f6;border:1px solid var(--line);border-radius:18px;padding:20px;margin:20px 0}.big{font-size:38px;margin:8px 0}.tiny{font-size:12px;color:var(--muted);margin-top:18px}.toast{display:none;margin:15px 0;padding:14px;border-radius:12px;background:#fff4f5;border:1px solid #f0cdd1;color:#71343b}.success{text-align:center}.heart{font-size:58px;animation:pulse 1.2s infinite}@keyframes pulse{50%{transform:scale(1.12)}}.adminBox{margin-top:18px;padding:16px;border:1px solid var(--line);border-radius:14px;background:#f9fbfa;text-align:right}
+.adminBox input{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;font-size:16px;margin:8px 0}
+.adminResults{margin-top:14px;text-align:right;line-height:1.7}
+.adminItem{padding:12px 0;border-bottom:1px solid var(--line)}
+.disclosure{font-size:11px;color:var(--muted);text-align:center;margin-top:14px;line-height:1.5}
+.serial{font-family:monospace;color:var(--muted);font-size:12px;text-align:center;margin-top:28px}@media(max-width:520px){.info{grid-template-columns:1fr}.card{border-radius:19px}.question{font-size:21px}.btn{width:100%}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><div>מערכת מעקב פסיכולוגי</div><div class="badge">תיק פעיל • 001</div></div>
+  <main class="card">
+    <section id="intro" class="screen active">
+      <div class="brain">🧠</div><div class="eyebrow">תיק מעקב פסיכולוגי</div><h1 class="title">פגישה מס' 001</h1>
+      <div class="info"><div><span>מטופל</span><strong>שילה מדמוני</strong></div><div><span>מטפלת</span><strong>שובל</strong></div><div><span>סטטוס</span><strong>ממתין לאישור המטפלת</strong></div><div><span>סיווג</span><strong>מקרה מעניין במיוחד</strong></div></div>
+      <div class="note"><b>הערה מנהלתית:</b><br>המספור "001" נבחר מתוך הערכה מקצועית ואופטימית שיהיה צורך בפגישות המשך. 😉</div>
+      <div class="warm"><b>מטרת הפגישה</b><br>לא שכחתי את מה שהיה בינינו,<br>וכנראה שיש דברים שגם הזמן לא באמת מצליח למחוק.<br><br>נשארה בי <b>פינה חמה אלייך, שובל ❤️</b><br>ואולי הגיע הזמן לבדוק אם משהו מהקסם ההוא עדיין שם...</div>
+      <div class="warning">⚠️ <b>עם זאת, פגישה מס' 001 עדיין אינה מאושרת.</b><br><br>לצורך השלמת התהליך, על המטפלת שובל לעבור <b>אבחון קצר ומקצועי לחלוטין.</b><br><span style="color:var(--muted)">טוב... כמעט לחלוטין. 😏</span></div>
+      <div class="btns"><button class="btn primary" onclick="startQuiz()">התחלת האבחון 🧠</button></div><div class="disclosure">בהמשך, התשובות והאישור נשמרים לצורך חוויית ההזמנה.</div>
+    </section>
+    <section id="quiz" class="screen"><div class="qnum" id="qnum"></div><div class="progress"><div id="bar" class="bar"></div></div><div id="question" class="question"></div><div id="answers"></div></section>
+    <section id="analyzing" class="screen analysis"><div class="brain">🔬</div><h2>מנתח תוצאות...</h2><div class="loader"></div><div style="color:var(--muted)">נא לא להפריע למערכת בזמן שהיא מנסה להישאר מקצועית.</div></section>
+    <section id="result" class="screen analysis"><div class="brain">📋</div><h2>סיכום אבחון</h2><div class="resultBox"><div class="checks">היכרות מוקדמת: ✅<br>פינה חמה: ✅<br>סקרנות: ✅<br>פוטנציאל לכימיה: <b>לא ניתן לקבוע מרחוק</b></div></div><p>לאחר ניתוח מעמיק של הנתונים, המערכת קבעה כי אין אפשרות להגיע לאבחנה חד־משמעית בתנאי מעבדה.</p><div class="big">נדרש ניסוי בשטח. 😏</div><h1>❤️ פגישה מס' 001</h1><h3>שילה + שובל</h3><div id="toast" class="toast">בקשתך לחוות דעת נוספת התקבלה.<br><b>חוות הדעת השנייה קבעה שגם היא ממליצה לצאת עם שילה. 😂</b></div><div class="btns"><button class="btn primary" onclick="approve()">מאשרת את פגישה 001 ❤️</button><button class="btn secondary" onclick="secondOpinion()">נדרשת חוות דעת נוספת 🧐</button></div></section>
+    <section id="success" class="screen success"><div class="heart">❤️</div><div class="eyebrow">האבחון הושלם</div><h1 class="big">פגישה מס' 001 אושרה בהצלחה</h1><p style="font-size:18px;line-height:1.8">האבחון הראשוני הסתיים.<br>נראה שהטיפול המומלץ הוא פשוט... להיפגש. 😉</p><div class="note" style="text-align:center"><b>עדכון מערכת:</b><br>מתבצעת היערכות מוקדמת לפתיחת תיק עבור<br><b>פגישה מס' 002...</b> 😏❤️</div><div class="tiny">תופעות לוואי אפשריות: חיוכים, פרפרים בבטן ורצון בפגישת המשך.</div></section>
+
+    <section id="admin" class="screen">
+      <div class="brain">🔐</div>
+      <div class="eyebrow">אזור מנהל</div>
+      <h2 style="text-align:center">תוצאות פגישה 001</h2>
+      <div class="adminBox">
+        <label for="adminPassword"><b>סיסמת מנהל</b></label>
+        <input id="adminPassword" type="password" placeholder="הכנס סיסמה">
+        <div class="btns"><button class="btn primary" onclick="loadAdmin()">הצג תוצאות</button></div>
+        <div id="adminStatus" class="tiny"></div>
+        <div id="adminResults" class="adminResults"></div>
+      </div>
+      <div class="tiny" style="text-align:center">כניסה: הוסף לכתובת האתר <b>?admin=1</b></div>
+    </section>
+
+    <div class="serial">CONFIDENTIAL • CASE SHILA-SHOVAL-001</div>
+  </main>
+</div>
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-app.js";
+import { getFirestore, collection, addDoc, getDocs, query, orderBy, limit, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
+
+// ====== הדבק כאן את firebaseConfig שלך ======
+const firebaseConfig = {
+  apiKey: "PASTE_API_KEY_HERE",
+  authDomain: "PASTE_PROJECT.firebaseapp.com",
+  projectId: "PASTE_PROJECT_ID_HERE",
+  storageBucket: "PASTE_PROJECT.firebasestorage.app",
+  messagingSenderId: "PASTE_SENDER_ID_HERE",
+  appId: "PASTE_APP_ID_HERE"
+};
+// ============================================
+
+// שנה את הסיסמה לפני העלאה. זו נעילה בסיסית בלבד.
+// לאבטחה אמיתית של קריאות מנהל מומלץ Firebase Authentication + Security Rules.
+const ADMIN_PASSWORD = "001shila";
+
+let db = null;
+const configured = !Object.values(firebaseConfig).some(v => String(v).includes("PASTE_"));
+if (configured) {
+  const app = initializeApp(firebaseConfig);
+  db = getFirestore(app);
+}
+
+const questions=[
+ {q:'מטופל מהעבר חוזר במטרה לקבוע תור, אבל השיחה זורמת קצת מעבר למצופה. מהי המסקנה המקצועית?',a:['תקשורת בין־אישית טובה','המטופל פשוט חברותי במיוחד','אין מספיק נתונים — נדרשת פגישה נוספת 😏']},
+ {q:'אם אותו מטופל היה מציע להיפגש מחוץ לקליניקה, היית...',a:['מפנה אותו לפסיכולוגית אחרת 😂','שוקלת את העניין','שואלת מתי ואיפה']},
+ {q:'מהי הדרך המדויקת ביותר לבדוק אם עדיין קיימת כימיה בין שני אנשים שמכירים מהעבר?',a:['שאלון פסיכולוגי מקיף','סדרת מבחנים ואבחונים','להיפגש ולבדוק בעצמנו 😉']},
+ {q:'המטופל השקיע והכין עבורך אבחון שלם רק כדי להזמין אותך לצאת. מה ניתן להסיק מכך?',a:['מקרה מורכב מאוד','למטופל יש יותר מדי זמן פנוי 😂','אולי בכל זאת מגיע לו פגישה מס׳ 001 ❤️']}
+];
+
+let qi=0;
+const chosenAnswers=[];
+let responseSaved=false;
+let responseDocId=null;
+
+function show(id){
+  document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+window.show = show;
+
+window.startQuiz=function(){qi=0;show('quiz');renderQ()}
+function renderQ(){
+  document.getElementById('qnum').textContent=`שאלה ${qi+1} מתוך ${questions.length}`;
+  document.getElementById('bar').style.width=`${(qi/questions.length)*100}%`;
+  document.getElementById('question').textContent=questions[qi].q;
+  const box=document.getElementById('answers');box.innerHTML='';
+  questions[qi].a.forEach((t,i)=>{
+    const b=document.createElement('button');b.className='answer';
+    b.textContent=['א. ','ב. ','ג. '][i]+t;
+    b.onclick=()=>nextQ(t,i);box.appendChild(b)
+  })
+}
+async function nextQ(text,index){
+  chosenAnswers[qi]={question:questions[qi].q,answer:text,choice:index};
+  qi++;
+  if(qi<questions.length) renderQ();
+  else{
+    document.getElementById('bar').style.width='100%';
+    show('analyzing');
+    await saveResponse(false);
+    setTimeout(()=>show('result'),2600)
+  }
+}
+window.secondOpinion=function(){
+  document.getElementById('toast').style.display='block';
+  document.getElementById('toast').scrollIntoView({behavior:'smooth',block:'center'})
+}
+window.approve=async function(){
+  await saveResponse(true);
+  show('success');confetti()
+}
+
+async function saveResponse(approved){
+  if(!db) return;
+  const payload={
+    caseId:"SHILA-SHOVAL-001",
+    respondent:"שובל",
+    answers:chosenAnswers,
+    approved:Boolean(approved),
+    createdAt:serverTimestamp(),
+    clientTime:new Date().toISOString()
+  };
+  try{
+    // Create one record when quiz ends. Approval creates a newer record with approved=true.
+    const ref=await addDoc(collection(db,"date001Responses"),payload);
+    responseDocId=ref.id;
+    responseSaved=true;
+  }catch(e){
+    console.error("Save failed",e);
+  }
+}
+
+window.loadAdmin=async function(){
+  const status=document.getElementById('adminStatus');
+  const out=document.getElementById('adminResults');
+  out.innerHTML='';
+  if(document.getElementById('adminPassword').value!==ADMIN_PASSWORD){
+    status.textContent='סיסמה שגויה.'; return;
+  }
+  if(!db){ status.textContent='Firebase עדיין לא מחובר. הדבק את firebaseConfig בקובץ.'; return; }
+  status.textContent='טוען...';
+  try{
+    const q=query(collection(db,"date001Responses"),orderBy("clientTime","desc"),limit(10));
+    const snap=await getDocs(q);
+    if(snap.empty){status.textContent='עדיין אין תשובות.';return;}
+    status.textContent='';
+    snap.forEach(d=>{
+      const x=d.data();
+      const box=document.createElement('div');
+      box.className='adminItem';
+      const when=x.clientTime ? new Date(x.clientTime).toLocaleString('he-IL') : '';
+      const answers=(x.answers||[]).map((a,i)=>`<div><b>${i+1}.</b> ${escapeHtml(a.answer||'')}</div>`).join('');
+      box.innerHTML=`<b>${x.approved?'❤️ אושרה פגישה 001':'🧠 האבחון הושלם'}</b><br><span class="tiny">${escapeHtml(when)}</span>${answers}`;
+      out.appendChild(box);
+    });
+  }catch(e){
+    console.error(e);
+    status.textContent='לא ניתן לקרוא את התוצאות. בדוק את Firestore Rules והחיבור.';
+  }
+}
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+}
+function confetti(){
+  for(let i=0;i<26;i++){
+    let e=document.createElement('div');e.textContent=Math.random()>.45?'❤️':'🧠';
+    e.style.cssText=`position:fixed;z-index:99;top:-40px;left:${Math.random()*100}vw;font-size:${16+Math.random()*18}px;transition:transform ${2+Math.random()*2}s linear,opacity 3s;pointer-events:none`;
+    document.body.appendChild(e);
+    requestAnimationFrame(()=>{e.style.transform=`translate(${(Math.random()-.5)*160}px,110vh) rotate(${Math.random()*720}deg)`;e.style.opacity='0'});
+    setTimeout(()=>e.remove(),4200)
+  }
+}
+
+// ?admin=1 opens the private-looking admin view.
+if(new URLSearchParams(location.search).get('admin')==='1') show('admin');
+</script>
+</body>
+</html>
